@@ -1,3 +1,4 @@
+
 const flightPath = {
     curviness: 1.25,
     autoRotate: true,
