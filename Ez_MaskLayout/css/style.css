@@ -1,0 +1,41 @@
+* {  box-sizing: border-box;}
+html {  font-size: 1em;  font-family: 'Alike';  background-color: #262626;  color: #d9d9d9;}
+body {  margin: 0;}
+img {  max-width: 100%;  height: auto; }
+h1,h2,h3,h4,h5,h6 {  font-family: 'Roboto';  line-height: 1.313em;}
+h1 {  font-size: 2em;  margin: 0.563em 0;}
+h2 {  font-size: 2.3em;  margin: 0.625em 0;}
+h3 {  font-size: 1.3em;  margin: 1.313em 0;}
+h4 {  font-size: 1.2em;  margin: 1.313em 0;}
+h5 {  font-size: 1.125em;  margin: 1.313em 0;}
+h6 {  font-size: 1em;  margin: 0.75em 0;}
+
+.content{
+    font-size: 1.5rem;
+    color: #262626;
+    background-repeat: no-repeat;
+    background-size: 49% auto;
+    background-attachment: fixed;
+}
+.right {
+    padding: 1.618em 6.472em 3.236em 50%;
+}
+.left{
+    padding: 1.618em 50% 3.236em 6.472em;
+}
+.illustration_01{
+    background-color: #00c17b;
+    background-image: url(../images/minipadwhite.png);
+    background-position: 0 50%;
+}
+.illustration_02{
+    background-color: #e8697b;
+    background-image: url(../images/minipadblack.png);
+    background-position: 100% 50%;
+}
+.separator{
+    padding: 1.618em 0;
+    text-align: center;
+    font-size: 1.8em;
+}
+
