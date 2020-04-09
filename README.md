@@ -8,4 +8,5 @@ Github | Simo Edwin
 
 * Ez = 바위처럼의 Ezweb
 youtube | 
-- cubeTransition (https://youtu.be/g9dEtaug9Uo)
+
+* Wsb = Webstoryboy 
