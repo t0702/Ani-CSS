@@ -1,0 +1,109 @@
+body{
+    background-color: ##fff;
+    height: 100vh;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cube { 
+    position: relative;
+    width: 100px; height: 100px;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-140deg);
+    animation: rotate 8s linear infinite;
+}
+.cube div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100px; height: 100px;
+    opacity: 0.75;
+    color: #fff;
+}
+.cube div:nth-child(1){
+    background: #ffcc80;
+    transform-origin: center top;
+    transform: rotateX(90deg) translateY(-100px);
+    animation: top 4s 8s ease-in-out infinite;
+}
+.cube div:nth-child(2){
+    background: #ffb74d;
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100px);
+    animation: bottom 4s 8s ease-in-out infinite;
+}
+.cube div:nth-child(3){
+    background: #ffa726;
+    transform-origin: left center;
+    transform: rotateY(-90deg) translateX(-100px);
+    animation: left 4s 8s ease-in-out infinite;
+}
+.cube div:nth-child(4){
+    background: #ff9800;
+    transform-origin: right center;
+    transform: rotateY(90deg) translateX(100px);
+    animation: right 4s 8s ease-in-out infinite;
+}
+.cube div:nth-child(5){
+    background: #fb8c00;
+    transform-origin: right center;
+    transform: rotateX(0deg) translateX(0px);
+    animation: front 4s 8s ease-in-out infinite;
+}
+.cube div:nth-child(6){
+    background: #f57c00;
+    transform-origin: right center;
+    transform: rotateX(180deg) translateZ(100px);
+    animation: back 4s 8s ease-in-out infinite;
+}
+
+@keyframes rotate{
+    0%  {transform: rotatex(0) rotatey(0) rotatez(0) translateZ(0);}
+    100%{transform: rotatex(360deg) rotatey(360deg) rotatez(360deg) translateZ(0);}
+}
+
+@keyframes top{
+    0%  {transform: rotatex(90deg) translatey(-100px) translatez(0);}
+    50% {transform: rotatex(90deg) translatey(-100px) translatez(100px);}
+    100%{transform: rotatex(90deg) translatey(-100px) translatez(0);}
+}
+
+@keyframes bottom{
+    0%  {transform: rotatex(-90deg) translatey(100px) translatez(0);}
+    50% {transform: rotatex(-90deg) translatey(100px) translatez(100px);}
+    100%{transform: rotatex(-90deg) translatey(100px) translatez(0);}
+}
+
+@keyframes left{
+    0%  {transform: rotatey(-90deg) translatex(-100px) scaley(1);}
+    50% {transform: rotatey(-90deg) translatex(-100px) scaley(3);}
+    100%{transform: rotatey(-90deg) translatex(-100px) scaley(1);}
+}
+
+@keyframes right{
+    0%  {transform: rotatey(90deg) translatex(100px) scaley(1);}
+    50% {transform: rotatey(90deg) translatex(100px) scaley(3);}
+    100%{transform: rotatey(90deg) translatex(100px) scaley(1);}
+}
+
+@keyframes right{
+    0%  {transform: rotatey(90deg) translatex(100px) scaley(1);}
+    50% {transform: rotatey(90deg) translatex(100px) scaley(3);}
+    100%{transform: rotatey(90deg) translatex(100px) scaley(1);}
+}
+
+@keyframes front{
+    0%  {transform: rotatex(0deg) translatex(0px) scaley(1);}
+    50% {transform: rotatex(0deg) translatex(0px) scaley(3);}
+    100%{transform: rotatex(0deg) translatex(0px) scaley(1);}
+}
+
+@keyframes back{
+    0%  {transform: rotatex(180deg) translatez(100px) scaley(1);}
+    50% {transform: rotatex(180deg) translatez(100px) scaley(3);}
+    100%{transform: rotatex(180deg) translatez(100px) scaley(1);}
+}
+
