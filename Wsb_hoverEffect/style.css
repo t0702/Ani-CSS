@@ -1,0 +1,97 @@
+body {
+    height: 100vh;
+    background: #0F2027;
+    background: linear-gradient(120deg, #2C5364, #203A43, #0F2027);
+    font-family: 'Jua', sans-serif;
+}
+.hover_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.hover_wrap figure{
+    position: relative;
+    width: 400px;
+    margin: 10px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hover_wrap figure img{
+    width: 100%; display: block;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.hover_wrap figure:hover img{
+    opacity: 0.1;
+}
+.hover_wrap figcaption{
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.hover_wrap figcaption::before{
+    content: '';
+    width: 150px; height: 150px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+.hover_wrap figcaption strong {
+    color: #fff;
+    z-index: 20;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+
+/* hover effect1 */
+.hover_wrap .hover5 figcaption{
+    transform: translateX(80%) rotate(180deg);
+    transition: all 0.3s ease;
+}
+.hover_wrap .hover5:hover figcaption{
+    transform: translateX(0%) rotate(0deg);
+}
+
+/* hover effect2 */
+.hover_wrap .hover6 figcaption{
+    transform: translateX(-80%) rotate(-180deg);
+    transition: all 0.3s ease;
+}
+.hover_wrap .hover6:hover figcaption{
+    transform: translateX(0%) rotate(0deg);
+}
+
+/* media query */
+@media (max-width: 800px){
+    .hover_wrap{flex-direction: column;}
+    /* hover effect1 */
+    .hover_wrap .hover5 figcaption{
+        transform: translateY(80%) rotate(180deg);
+        transition: all 0.3s ease;
+    }
+    .hover_wrap .hover5:hover figcaption{
+        transform: translateY(0%) rotate(0deg);
+    }
+
+    /* hover effect2 */
+    .hover_wrap .hover6 figcaption{
+        transform: translateY(-80%) rotate(-180deg);
+        transition: all 0.3s ease;
+    }
+    .hover_wrap .hover6:hover figcaption{
+        transform: translateY(0%) rotate(0deg);
+    }
+
+    
+}
