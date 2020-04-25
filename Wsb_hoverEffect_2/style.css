@@ -48,7 +48,6 @@ body {
     transform: rotateY(0deg);
     transition: all 1s;
     backface-visibility: hidden;
-    
 }
 .hover_wrap .effect.hover7:hover .front{
     transform: rotateY(180deg);
